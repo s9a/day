@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html lang="" style="background:seashell">
+<html lang="en-US" data-day>
 <meta charset="utf-8">
 
-<title>...</title>
+<title>day</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="seashell">
 <meta name="color-scheme" content="light">
 <meta name="description" content="...">
+
+<style>
+  [data-day] { background-color: peachpuff; color: #101 }
+  [data-day="0"] { background-color: sandybrown; color: #101 }
+  [data-day="1"] { background-color: seashell; color: #108 }
+  [data-day="2"] { background-color: hotpink; color: #101 }
+  [data-day="3"] { background-color: springgreen; color: #101 }
+  [data-day="4"] { background-color: orange; color: #101 }
+  [data-day="5"] { background-color: skyblue; color: #101 }
+  [data-day="6"] { background-color: violet; color: #101 }
+  [data-day="7"] { background-color: gold; color: #211 }
+</style>
+
+<form>
+  <h1>day</h1>
+  <output name="day">?</output>
+</form>
+
+<form hidden>
+  <h1><code>Date</code></h1>
+  <output name="toLocaleDateString" aria-label="toLocaleDateString">...</output>
+  <output name="toDateString" aria-label="toLocaleDateString">...</output>
+</form>
+
+<script src="day.js" async></script>
